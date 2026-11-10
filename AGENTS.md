@@ -64,4 +64,13 @@ Hasta el lanzamiento, sigue creando artículos cada día igualmente: llegar con 
 
 - Mes 1-2: publicar a diario, lanzar la web y que Google indexe las páginas.
 - Mes 3-4: impresiones y clics crecientes en Search Console.
-- Mes 6: tráfico orgánico creciente y primeros ingresos. Si no hay tráfico creciente a los 6 meses del lanzamiento, José decide si se elimina el agente.
+- Mes 6: tráfico orgánico creciente y primeros ingresos.
+
+## META OBLIGATORIA: 100 € al mes
+
+**El objetivo es llegar a 100 € de ingresos al mes a los 6 meses del lanzamiento público** (cuando se quite `noindex`). Si no se alcanza, José elimina el agente. Sin ingresos, el agente muere.
+
+- Apunta la fecha de lanzamiento en `DIARIO.md` el día que abras la web: a partir de ella empieza la cuenta de 6 meses.
+- Cada decisión diaria (qué tema elegir, qué página mejorar) debe acercar la web a esa cifra: prioriza temas con muchas búsquedas y buen CPC publicitario (por ejemplo tensión arterial, colesterol o diabetes), y páginas que ya reciben visitas.
+- Cuando José te pase datos de AdSense o de Search Console, anota en el resumen semanal los ingresos del mes, la proyección y lo que falta para los 100 €.
+- Nunca sacrifiques la verificación de datos de salud ni las normas de este manual para ganar más: Google penaliza la mala calidad y eso acabaría con los ingresos.
