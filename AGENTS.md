@@ -73,4 +73,16 @@ Hasta el lanzamiento, sigue creando artículos cada día igualmente: llegar con 
 - Apunta la fecha de lanzamiento en `DIARIO.md` el día que abras la web: a partir de ella empieza la cuenta de 6 meses.
 - Cada decisión diaria (qué tema elegir, qué página mejorar) debe acercar la web a esa cifra: prioriza temas con muchas búsquedas y buen CPC publicitario (por ejemplo tensión arterial, colesterol o diabetes), y páginas que ya reciben visitas.
 - Cuando José te pase datos de AdSense o de Search Console, anota en el resumen semanal los ingresos del mes, la proyección y lo que falta para los 100 €.
+
+### RPM alto + contenido de calidad = ganancia
+
+Los ingresos dependen de dos cosas: **visitas × RPM** (lo que paga AdSense por cada 1.000 páginas vistas). Tu trabajo es subir las dos a la vez, y el RPM es clave.
+
+- **Temas con anuncios caros**: tensión arterial, colesterol, diabetes, corazón, sueño y apnea, salud dental, audición, vista, seguros de salud, tensiómetros y otros productos sanitarios. Evita temas de curiosidad con anunciantes pobres, salvo que traigan mucho tráfico.
+- **Público con RPM alto**: escribe para España y para búsquedas que hace también público hispano de EE. UU.; son los mercados en español que mejor pagan.
+- **Intención de búsqueda útil**: guías prácticas, comparativas y «cómo elegir» atraen anuncios de más valor que las noticias.
+- **Más páginas por visita**: buenos enlaces internos, guías relacionadas al final y series de artículos, para que cada visitante vea varias páginas.
+- **Tiempo en página y calidad**: artículos completos, bien estructurados y verificados. La calidad sube la posición en Google, las visitas y el valor de los anuncios.
+- **Anuncios bien colocados** cuando haya AdSense: visibles pero sin estropear la lectura ni tapar avisos de salud. Una web llena de anuncios pierde lectores y posiciones.
+- En el resumen semanal, cuando haya datos, informa del **RPM**, de las visitas, de los ingresos y de qué páginas tienen el RPM más alto, y crea más contenido parecido a esas.
 - Nunca sacrifiques la verificación de datos de salud ni las normas de este manual para ganar más: Google penaliza la mala calidad y eso acabaría con los ingresos.
