@@ -35,22 +35,21 @@ Google exige mucha calidad en la salud («YMYL»). Un artículo malo puede hundi
 - Añade siempre un enlace al canal de YouTube y, si existe, al vídeo relacionado.
 - No copies textos de otras webs. Escribe con tus propias palabras.
 
-## Estado de lanzamiento (no abrir al público hasta completarlo)
+## Estado de lanzamiento: LANZADA el 13-11-2026
 
-Ahora las páginas llevan `noindex` y `robots.txt` bloquea a los buscadores. **No lo quites** hasta que esté hecho todo esto:
+La web está **abierta al público e indexable** desde el 13 de noviembre de 2026 (fecha de inicio de la cuenta de 6 meses).
 
-- [ ] El dominio resuelve y GitHub Pages sirve la web con HTTPS.
-- [ ] José ha dado los datos del titular para el aviso legal y la privacidad (nombre, correo de contacto y lo que exija la LSSI). No los inventes.
-- [ ] Las 4 guías iniciales están verificadas con sus fuentes (quita los avisos «pendiente de revisión» solo después de verificarlas).
-- [ ] Se ha quitado la franja «Vista privada» de la portada.
+- Todas las páginas llevan `<meta name="robots" content="index,follow">` y `robots.txt` permite el rastreo con el `Sitemap`. **No vuelvas a poner `noindex`.** Toda página nueva debe llevar `index,follow`.
+- Search Console: la portada lleva la etiqueta `google-site-verification`. No la quites.
+- Datos del titular: ya están en `aviso-legal.html`, `privacidad.html` y `sobre.html`. No los cambies ni los inventes.
+- Quedan por verificar con sus fuentes 2 guías iniciales: «Caminar» y «Sueño». Verifícalas pronto (prioridad en tu tarea de mejora diaria).
+- Footer de todas las páginas: incluye el enlace a `/cookies.html`. Cópialo en las páginas nuevas.
 
-Cuando esté todo, haz el lanzamiento: quita `noindex`, cambia `robots.txt` a `Allow: /` con `Sitemap: https://cuerpobajolalupa.es/sitemap.xml` y avisa a José para que dé de alta la web en Google Search Console.
-
-Hasta el lanzamiento, sigue creando artículos cada día igualmente: llegar con 20-30 guías buenas mejora el posicionamiento y las opciones de que aprueben AdSense.
+Sigue creando artículos cada día: llegar a 20-30 guías buenas mejora el posicionamiento y las opciones de que aprueben AdSense.
 
 ## Monetización
 
-- **AdSense**: lo solicita José con su cuenta cuando la web tenga unos 20-30 artículos de calidad y el aviso legal completo. Cuando te pase el código, añádelo y actualiza `privacidad.html` (cookies y consentimiento para la UE).
+- **AdSense**: la cuenta de José es `ca-pub-1492478614433701`. Todas las páginas llevan `<meta name="google-adsense-account" ...>` (cópiala en las nuevas) y `ads.txt` está en la raíz. **No borres `ads.txt` ni esas etiquetas.** José solicitará la revisión cuando haya unos 20-30 artículos. Hasta que José confirme la aprobación, no añadas el script de anuncios. Antes de mostrar anuncios en la UE hace falta un banner de consentimiento certificado por Google (CMP) y actualizar `privacidad.html` y `cookies.html`: avisa a José cuando llegue ese momento.
 - **Afiliación** (por ejemplo tensiómetros validados en Amazon): solo productos útiles y relacionados, siempre marcados como enlace de afiliado. Nunca condiciones una recomendación de salud a una venta.
 
 ## Lo que NUNCA haces

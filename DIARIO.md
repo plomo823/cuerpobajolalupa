@@ -29,3 +29,10 @@
 - Enlace a la nueva guía en «Sigue aprendiendo» de las 6 guías; tarjeta nueva en la portada; sitemap.xml actualizado.
 - Lanzamiento: sigue con noindex y robots bloqueado (faltan GitHub Pages/HTTPS, datos del titular y verificar 2 guías iniciales).
 - **Plan para mañana**: verificar «Caminar y cuidar el corazón» (OMS actividad física) y quitar su aviso; nuevo artículo de alto RPM: «HbA1c (hemoglobina glicosilada): valores normales» o «apnea del sueño: síntomas».
+
+## 2026-11-13 — Migración real a GitHub Pages y lanzamiento (sesión con José, no del agente)
+- La web publicada en ChatGPT Sites había recibido cambios que no estaban en este repositorio: datos del titular (aviso legal, privacidad, sobre, método), página de cookies, `ads.txt`, etiquetas de Search Console y AdSense, y apertura a buscadores. Se han traído al repositorio sin perder las 3 guías nuevas ni las verificaciones del agente.
+- Quitados `noindex`, la franja «Vista privada» y el texto de «prototipo privado». **Fecha de lanzamiento: 13-11-2026** (empieza la cuenta de 6 meses para la meta de 100 €/mes).
+- Privacidad y cookies actualizadas: el alojamiento ahora es GitHub Pages, no ChatGPT Sites.
+- GitHub Pages activado y DNS de OVH apuntado a GitHub (ver commits de hoy).
+- Pendiente del agente: verificar «Caminar» y «Sueño» y seguir con un artículo diario de alto RPM.
