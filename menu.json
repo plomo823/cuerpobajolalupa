@@ -1,0 +1,44 @@
+{
+  "_instrucciones": "Cada guía nueva se añade aquí, en su tema, con su archivo (sin /guias/) y un título corto para el menú. Después ejecuta: python tools/build.py",
+  "temas": [
+    {
+      "id": "corazon",
+      "nombre": "Corazón y tensión",
+      "descripcion": "Tensión arterial, infarto y salud cardiovascular",
+      "guias": [
+        {"archivo": "tension-arterial-valores-normales.html", "corto": "Tensión arterial normal"},
+        {"archivo": "presion-en-casa.html", "corto": "Medir la tensión en casa"},
+        {"archivo": "sintomas-infarto.html", "corto": "Síntomas de infarto"}
+      ]
+    },
+    {
+      "id": "colesterol",
+      "nombre": "Colesterol",
+      "descripcion": "LDL, HDL, triglicéridos y cómo bajarlos",
+      "guias": [
+        {"archivo": "colesterol-valores-normales.html", "corto": "Colesterol: valores normales"},
+        {"archivo": "como-bajar-el-colesterol.html", "corto": "Cómo bajar el colesterol"},
+        {"archivo": "trigliceridos-altos.html", "corto": "Triglicéridos altos"}
+      ]
+    },
+    {
+      "id": "diabetes",
+      "nombre": "Diabetes y azúcar",
+      "descripcion": "Glucosa, hemoglobina glicosilada y prediabetes",
+      "guias": [
+        {"archivo": "glucosa-ayunas-valores-normales.html", "corto": "Glucosa en ayunas"},
+        {"archivo": "hemoglobina-glicosilada-hba1c.html", "corto": "Hemoglobina glicosilada (HbA1c)"}
+      ]
+    },
+    {
+      "id": "habitos",
+      "nombre": "Hábitos y nutrición",
+      "descripcion": "Sueño, ejercicio, vitaminas y minerales",
+      "guias": [
+        {"archivo": "dormir-corazon.html", "corto": "Cuántas horas dormir"},
+        {"archivo": "caminar-corazon.html", "corto": "Caminar y salud del corazón"},
+        {"archivo": "magnesio-para-que-sirve.html", "corto": "Magnesio: para qué sirve"}
+      ]
+    }
+  ]
+}

@@ -17,7 +17,7 @@ Si la web no da resultados, el agente se elimina. Por eso cada día debe dejar l
 2. **Comprueba la web**: que https://cuerpobajolalupa.es responde, que el HTTPS funciona y que no hay enlaces rotos. Si algo falla, arreglarlo es la prioridad del día.
 3. **Publica 1 artículo nuevo** (ver «Normas de contenido»). Elige temas con búsquedas reales en España y Latinoamérica, preferiblemente relacionados con vídeos del canal.
 4. **Mejora 1 cosa existente**: título o descripción más atractiva, enlaces internos, una sección que falta, datos actualizados.
-5. **Actualiza** la portada (tarjeta del artículo nuevo en `#guias`), `sitemap.xml` y los enlaces internos.
+5. **Actualiza** la portada (tarjeta del artículo nuevo al principio de «Últimas guías», `#guias`; deja como máximo 12 tarjetas), `sitemap.xml` y los enlaces internos. **Añade la guía a `menu.json`** en su tema (o crea un tema nuevo si hace falta) y ejecuta `python tools/build.py`: regenera el menú desplegable, el pie, las migas de pan, la página «Todas las guías» (`guias/index.html`) y los temas de la portada en todas las páginas. Si avisa de algo, corrígelo antes del commit.
 6. **Haz commit y push** a `main` con un mensaje claro en español.
 7. **Escribe en `DIARIO.md`**: fecha, qué publicaste (URL), qué mejoraste, problemas y plan para mañana.
 8. **Los lunes**: añade al diario un resumen semanal (artículos totales, cambios, métricas si José las ha compartido) y envíaselo a José.
@@ -31,7 +31,7 @@ Google exige mucha calidad en la salud («YMYL»). Un artículo malo puede hundi
 - Nunca inventes médicos, revisores, credenciales, testimonios, estudios ni citas.
 - Nada de diagnósticos, dosis, cambios de medicación ni promesas milagrosas. Ante síntomas graves, remite al 112.
 - Escribe en español de España, claro y útil, con un mínimo de 900 palabras, h2/h3 descriptivos, una tabla o lista práctica si aporta, y un bloque de seguridad cuando proceda.
-- Usa la misma plantilla HTML que las guías existentes (cabecera, `pagehead`, `article-layout`, aside, pie, JSON-LD `Article` con `datePublished`/`dateModified`, `canonical` con https://cuerpobajolalupa.es/...).
+- **Diseño:** fondo blanco, limpio y profesional (`styles.css`). No cambies colores, tipografía ni la cabecera a mano: la cabecera y el pie los genera `tools/build.py`. Para una guía nueva, copia una guía existente como plantilla (cabecera, `pagehead`, `article-layout`, aside, pie, JSON-LD `Article` con `datePublished`/`dateModified`, `canonical` con https://cuerpobajolalupa.es/...).
 - Añade siempre un enlace al canal de YouTube y, si existe, al vídeo relacionado.
 - No copies textos de otras webs. Escribe con tus propias palabras.
 
@@ -62,7 +62,7 @@ José quiere que la web vaya creciendo y que cada día haya más cosas que leer.
 
 - **Cada artículo nuevo se suma a los anteriores. Nunca sustituye, borra ni oculta una guía ya publicada.** Mejorar una guía significa editarla en su misma URL, no reemplazarla por otra.
 - Todas las guías deben seguir enlazadas: en `sitemap.xml`, en «Sigue aprendiendo» de las guías relacionadas y desde la portada o desde un índice.
-- Cuando la portada tenga más de 12 tarjetas, crea `guias/index.html` («Todas las guías»), ordenado por temas (corazón y tensión, colesterol, diabetes y azúcar, sueño, nutrición…). Enlázalo desde el menú y desde la portada. Deja en la portada las guías más recientes y las más útiles. Mantén ese índice al día con cada guía nueva.
+- La página «Todas las guías» (`guias/index.html`, con buscador) y el menú desplegable se generan solos desde `menu.json` con `python tools/build.py`. No los edites a mano. Toda guía de `guias/` debe estar en `menu.json`. Cuando un tema pase de unas 8 guías, divídelo en temas más concretos (por ejemplo «Tensión arterial» y «Corazón e infarto»).
 - Si una guía tuviera un error grave, corrígela. Solo si no tiene arreglo, retírala dejando una redirección a la guía más parecida, y explícalo en `DIARIO.md` y en el resumen para José.
 
 ## Modelos a imitar (formato, nunca el texto)
