@@ -65,6 +65,24 @@ José quiere que la web vaya creciendo y que cada día haya más cosas que leer.
 - Cuando la portada tenga más de 12 tarjetas, crea `guias/index.html` («Todas las guías»), ordenado por temas (corazón y tensión, colesterol, diabetes y azúcar, sueño, nutrición…). Enlázalo desde el menú y desde la portada. Deja en la portada las guías más recientes y las más útiles. Mantén ese índice al día con cada guía nueva.
 - Si una guía tuviera un error grave, corrígela. Solo si no tiene arreglo, retírala dejando una redirección a la guía más parecida, y explícalo en `DIARIO.md` y en el resumen para José.
 
+## Modelos a imitar (formato, nunca el texto)
+
+En las búsquedas de salud que más pagan (colesterol, tensión, HbA1c, triglicéridos) Google pone arriba sobre todo **Tua Saúde (tuasaude.com/es)**, **MD.Saúde (mdsaude.com/es)**, **Saludonnet (saludonnet.com/blog)** y **CuídatePlus**. Imita **cómo están hechas** sus páginas, no lo que dicen. **Nunca copies ni parafrasees de cerca su texto, sus tablas ni sus imágenes:** escribe siempre a partir de las fuentes oficiales, con tus palabras. Copiar haría que Google hundiera la web y que AdSense la rechazara.
+
+Lo que funciona y debes aplicar:
+
+1. **Títulos con la búsqueda exacta y una promesa concreta.** Fórmula: «[Tema]: [lo que se busca], [segunda duda] y [qué hacer]», más «(con tabla)» o «(con calculadora)» si la página los tiene. Por ejemplo: «Triglicéridos altos: valores normales, causas y cómo bajarlos (con tabla)».
+2. **Respuesta en las primeras 2–3 frases.** La cifra o el dato clave arriba, y después la explicación.
+3. **Índice de saltos al principio** («En esta guía»), con enlaces a cada sección.
+4. **Tablas de referencia** claras: valor, interpretación y qué hacer.
+5. **Calculadoras e interactivos sencillos.** Es lo que más diferencia a Tua Saúde y retiene al lector. Ideas: clasificador de tensión arterial según la cifra, interpretación de un análisis de colesterol, conversor HbA1c → glucosa media, conversor mg/dL ↔ mmol/L, IMC y cintura. Usa JavaScript local, sin enviar datos. Cada resultado debe citar su fuente y llevar el aviso «orientativo, no sustituye al médico». Haz como máximo uno por semana y pruébalo bien antes de publicarlo.
+6. **Grupos de temas (cluster).** Una guía principal (por ejemplo «Colesterol») y muchas satélite (LDL, HDL, triglicéridos, alimentos que lo bajan, colesterol en el embarazo, colesterol en jóvenes…), todas enlazadas entre sí. Completa un grupo antes de abrir otro.
+7. **Preguntas largas y concretas (long tail)**, donde los grandes no compiten tanto: «¿Es malo tener el colesterol en 240?», «tensión 150/90 ¿es peligrosa?», «HbA1c 6,1 ¿qué significa?», «triglicéridos altos y cansancio». Busca en Google las «Preguntas relacionadas» y las sugerencias del buscador para encontrarlas.
+8. **Bloques «Lee también»** dentro del texto (2–3 por guía) y una sección final **«Más sobre este tema»** con 6–8 guías relacionadas.
+9. **Preguntas frecuentes** al final (3–5), con esquema JSON-LD `FAQPage`.
+10. **Fecha visible de actualización** («Actualizado el…») y una sección **«Fuentes»** completa. Nunca inventes un médico revisor. Muestra solo lo que sea verdad («Responsable editorial: José Antonio Sánchez Velázquez»).
+11. **Vídeo propio: es nuestra ventaja.** Tua Saúde pone vídeos en sus artículos. Nosotros tenemos el canal de José: cuando exista un vídeo del canal sobre el tema, insértalo (iframe de YouTube con `loading="lazy"`), y si no existe, enlaza el canal. Apunta en el resumen semanal qué temas convendría grabar en vídeo para reforzar las guías que más visitas reciben.
+
 ## Lo que NUNCA haces
 
 - Gastar dinero, contratar servicios o crear cuentas.
