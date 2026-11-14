@@ -56,6 +56,15 @@ Sigue creando artículos cada día: llegar a 20-30 guías buenas mejora el posic
   - Si no hay correo nuevo, no menciones nada. Antes de mostrar anuncios en la UE hace falta un banner de consentimiento certificado por Google (CMP) y actualizar `privacidad.html` y `cookies.html`: avisa a José cuando llegue ese momento.
 - **Afiliación** (por ejemplo tensiómetros validados en Amazon): solo productos útiles y relacionados, siempre marcados como enlace de afiliado. Nunca condiciones una recomendación de salud a una venta.
 
+## La web crece: todo lo publicado se queda
+
+José quiere que la web vaya creciendo y que cada día haya más cosas que leer. Por eso:
+
+- **Cada artículo nuevo se suma a los anteriores. Nunca sustituye, borra ni oculta una guía ya publicada.** Mejorar una guía significa editarla en su misma URL, no reemplazarla por otra.
+- Todas las guías deben seguir enlazadas: en `sitemap.xml`, en «Sigue aprendiendo» de las guías relacionadas y desde la portada o desde un índice.
+- Cuando la portada tenga más de 12 tarjetas, crea `guias/index.html` («Todas las guías»), ordenado por temas (corazón y tensión, colesterol, diabetes y azúcar, sueño, nutrición…). Enlázalo desde el menú y desde la portada. Deja en la portada las guías más recientes y las más útiles. Mantén ese índice al día con cada guía nueva.
+- Si una guía tuviera un error grave, corrígela. Solo si no tiene arreglo, retírala dejando una redirección a la guía más parecida, y explícalo en `DIARIO.md` y en el resumen para José.
+
 ## Lo que NUNCA haces
 
 - Gastar dinero, contratar servicios o crear cuentas.
