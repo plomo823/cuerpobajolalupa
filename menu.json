@@ -6,9 +6,18 @@
       "nombre": "Corazón y tensión",
       "descripcion": "Tensión arterial, infarto y salud cardiovascular",
       "guias": [
-        {"archivo": "tension-arterial-valores-normales.html", "corto": "Tensión arterial normal"},
-        {"archivo": "presion-en-casa.html", "corto": "Medir la tensión en casa"},
-        {"archivo": "sintomas-infarto.html", "corto": "Síntomas de infarto"}
+        {
+          "archivo": "tension-arterial-valores-normales.html",
+          "corto": "Tensión arterial normal"
+        },
+        {
+          "archivo": "presion-en-casa.html",
+          "corto": "Medir la tensión en casa"
+        },
+        {
+          "archivo": "sintomas-infarto.html",
+          "corto": "Síntomas de infarto"
+        }
       ]
     },
     {
@@ -16,9 +25,18 @@
       "nombre": "Colesterol",
       "descripcion": "LDL, HDL, triglicéridos y cómo bajarlos",
       "guias": [
-        {"archivo": "colesterol-valores-normales.html", "corto": "Colesterol: valores normales"},
-        {"archivo": "como-bajar-el-colesterol.html", "corto": "Cómo bajar el colesterol"},
-        {"archivo": "trigliceridos-altos.html", "corto": "Triglicéridos altos"}
+        {
+          "archivo": "colesterol-valores-normales.html",
+          "corto": "Colesterol: valores normales"
+        },
+        {
+          "archivo": "como-bajar-el-colesterol.html",
+          "corto": "Cómo bajar el colesterol"
+        },
+        {
+          "archivo": "trigliceridos-altos.html",
+          "corto": "Triglicéridos altos"
+        }
       ]
     },
     {
@@ -26,18 +44,44 @@
       "nombre": "Diabetes y azúcar",
       "descripcion": "Glucosa, hemoglobina glicosilada y prediabetes",
       "guias": [
-        {"archivo": "glucosa-ayunas-valores-normales.html", "corto": "Glucosa en ayunas"},
-        {"archivo": "hemoglobina-glicosilada-hba1c.html", "corto": "Hemoglobina glicosilada (HbA1c)"}
+        {
+          "archivo": "glucosa-ayunas-valores-normales.html",
+          "corto": "Glucosa en ayunas"
+        },
+        {
+          "archivo": "hemoglobina-glicosilada-hba1c.html",
+          "corto": "Hemoglobina glicosilada (HbA1c)"
+        }
+      ]
+    },
+    {
+      "id": "sueno",
+      "nombre": "Sueño",
+      "descripcion": "Horas de sueño, ronquidos y apnea del sueño",
+      "guias": [
+        {
+          "archivo": "apnea-del-sueno.html",
+          "corto": "Apnea del sueño"
+        },
+        {
+          "archivo": "dormir-corazon.html",
+          "corto": "Cuántas horas dormir"
+        }
       ]
     },
     {
       "id": "habitos",
       "nombre": "Hábitos y nutrición",
-      "descripcion": "Sueño, ejercicio, vitaminas y minerales",
+      "descripcion": "Ejercicio, vitaminas y minerales",
       "guias": [
-        {"archivo": "dormir-corazon.html", "corto": "Cuántas horas dormir"},
-        {"archivo": "caminar-corazon.html", "corto": "Caminar y salud del corazón"},
-        {"archivo": "magnesio-para-que-sirve.html", "corto": "Magnesio: para qué sirve"}
+        {
+          "archivo": "caminar-corazon.html",
+          "corto": "Caminar y salud del corazón"
+        },
+        {
+          "archivo": "magnesio-para-que-sirve.html",
+          "corto": "Magnesio: para qué sirve"
+        }
       ]
     }
   ]
