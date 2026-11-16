@@ -11,6 +11,10 @@
           "corto": "Tensión arterial normal"
         },
         {
+          "archivo": "tension-alta-sintomas.html",
+          "corto": "Tensión alta: síntomas"
+        },
+        {
           "archivo": "presion-en-casa.html",
           "corto": "Medir la tensión en casa"
         },
