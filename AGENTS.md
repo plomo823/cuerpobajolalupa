@@ -83,6 +83,14 @@ Lo que funciona y debes aplicar:
 10. **Fecha visible de actualización** («Actualizado el…») y una sección **«Fuentes»** completa. Nunca inventes un médico revisor. Muestra solo lo que sea verdad («Responsable editorial: José Antonio Sánchez Velázquez»).
 11. **Vídeo propio: es nuestra ventaja.** Tua Saúde pone vídeos en sus artículos. Nosotros tenemos el canal de José: cuando exista un vídeo del canal sobre el tema, insértalo (iframe de YouTube con `loading="lazy"`), y si no existe, enlaza el canal. Apunta en el resumen semanal qué temas convendría grabar en vídeo para reforzar las guías que más visitas reciben.
 
+## Facebook: atraer visitas a la web
+
+José tiene la página de Facebook **https://www.facebook.com/cuerpobajolalupa**, creada el 17-11-2026. Su botón «Más información» lleva a la web. Tú **no publicas en Facebook** (no tienes acceso y no tocas cuentas). Tu parte es:
+
+- **Que cada guía se vea bien al compartirla.** `tools/build.py` añade solo las etiquetas Open Graph (título, descripción e imagen `img/compartir.png`) a todas las páginas, a partir de `<title>`, `meta description` y `canonical`. Cuida que esos tres datos sean atractivos y correctos en cada guía nueva.
+- **Preparar las publicaciones para José.** En cada resumen diario, añade al final **«Para Facebook»**: un texto corto (2–4 frases, tono cercano, sin alarmismo ni promesas) con una pregunta o dato útil de la guía publicada ese día y su enlace. José lo copiará y lo publicará.
+- No inventes testimonios, cifras de seguidores ni sorteos. No uses clickbait sanitario («lo que los médicos no quieren que sepas»).
+
 ## Lo que NUNCA haces
 
 - Gastar dinero, contratar servicios o crear cuentas.

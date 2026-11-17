@@ -111,7 +111,9 @@ def footer_html(temas):
         '<div class="footer-about"><a class="brand" href="/"><span class="brand-mark">✚</span><span>Cuerpo Bajo la Lupa</span></a>'
         "<p>Guías de salud explicadas con claridad y contrastadas con fuentes oficiales. "
         'Divulgación del canal de YouTube <a href="https://www.youtube.com/channel/UCkz1cHuhbO_5uhVJpBQgLeg" '
-        'target="_blank" rel="noopener noreferrer">Cuerpo Bajo la Lupa</a>.</p></div>'
+        'target="_blank" rel="noopener noreferrer">Cuerpo Bajo la Lupa</a>.</p>'
+        '<p class="social"><a href="https://www.facebook.com/cuerpobajolalupa" target="_blank" rel="noopener noreferrer">Facebook</a>'
+        '<a href="https://www.youtube.com/channel/UCkz1cHuhbO_5uhVJpBQgLeg" target="_blank" rel="noopener noreferrer">YouTube</a></p></div>'
         f'<div class="footer-col"><h4>Temas</h4>{tema_links}<a href="/guias/">Todas las guías</a></div>'
         '<div class="footer-col"><h4>Proyecto</h4><a href="/sobre.html">El proyecto</a><a href="/metodo.html">Método editorial</a></div>'
         '<div class="footer-col footer-links"><h4>Legal</h4><a href="/privacidad.html">Privacidad</a>'
@@ -121,6 +123,33 @@ def footer_html(temas):
         "Ante una urgencia, llama al 112.</div>"
         "</div></footer>"
     )
+
+
+OG_IMAGE = SITE + "/img/compartir.png"
+
+
+def og_tags(t):
+    """Etiquetas Open Graph/Twitter para que los enlaces se vean bien al compartirlos (Facebook, WhatsApp...)."""
+    title = re.search(r"<title>(.*?)</title>", t, re.S)
+    desc = re.search(r'<meta name="description" content="([^"]*)"', t)
+    canon = re.search(r'<link rel="canonical" href="([^"]*)"', t)
+    if not (title and canon):
+        return None
+    is_article = "/guias/" in canon.group(1) and not canon.group(1).endswith("/guias/")
+    tags = [
+        ("og:type", "article" if is_article else "website"),
+        ("og:site_name", "Cuerpo Bajo la Lupa"),
+        ("og:locale", "es_ES"),
+        ("og:title", html.unescape(title.group(1).split(" | ")[0].strip())),
+        ("og:description", html.unescape(desc.group(1)) if desc else ""),
+        ("og:url", canon.group(1)),
+        ("og:image", OG_IMAGE),
+        ("og:image:width", "1200"),
+        ("og:image:height", "630"),
+    ]
+    out = "".join(f'<meta property="{k}" content="{esc(v)}">' for k, v in tags if v)
+    out += '<meta name="twitter:card" content="summary_large_image">'
+    return "<!--OG:inicio-->" + out + "<!--OG:fin-->"
 
 
 def card(g, tema):
@@ -178,6 +207,12 @@ def main():
         o = t
         t = re.sub(r"<header\b.*?</header>", header, t, count=1, flags=re.S)
         t = re.sub(r"<footer\b.*?</footer>", footer, t, count=1, flags=re.S)
+        og = og_tags(t)
+        if og:
+            if "<!--OG:inicio-->" in t:
+                t = re.sub(r"<!--OG:inicio-->.*?<!--OG:fin-->", og, t, count=1, flags=re.S)
+            else:
+                t = t.replace("</head>", og + "</head>", 1)
         if ADS_META not in t:
             t = t.replace('<meta charset="utf-8">', '<meta charset="utf-8">' + ADS_META, 1)
         if p.parent == GUIAS and p.name in tema_de:

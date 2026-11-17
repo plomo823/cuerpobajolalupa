@@ -180,3 +180,6 @@ h1,h2,h3,h4{color:var(--ink);line-height:1.25;margin:0 0 .5em}
 .footer-bottom{border-top:1px solid #23323d;margin-top:32px;padding-top:18px;font-size:13px;color:#8d9ba6}
 @media (max-width:800px){.footer-grid{grid-template-columns:1fr 1fr}.footer-about{grid-column:1/-1}}
 @media (max-width:600px){.section{padding:40px 0}.home-hero{padding:40px 0 28px}.search{flex-direction:column}.search button{padding:12px}.grid,.guide-grid{grid-template-columns:1fr}.article-card{padding:14px}.card-art{flex-basis:48px;height:48px}.card-art svg{width:30px;height:30px}.prose{font-size:17px}}
+
+.footer-about .social{display:flex;gap:16px;margin-top:14px}
+.footer-about .social a{font-weight:600}
