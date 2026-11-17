@@ -34,6 +34,10 @@
           "corto": "Colesterol: valores normales"
         },
         {
+          "archivo": "colesterol-ldl-alto.html",
+          "corto": "Colesterol LDL alto"
+        },
+        {
           "archivo": "como-bajar-el-colesterol.html",
           "corto": "Cómo bajar el colesterol"
         },
