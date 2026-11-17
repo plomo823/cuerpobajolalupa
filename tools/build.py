@@ -128,6 +128,14 @@ def footer_html(temas):
 OG_IMAGE = SITE + "/img/compartir.png"
 
 
+def og_image(url):
+    """Imagen propia de la guía (img/guias/<archivo>.png, la crea tools/portadas.py) o la genérica."""
+    slug = url.rstrip("/").rsplit("/", 1)[-1].removesuffix(".html")
+    if "/guias/" in url and (ROOT / "img" / "guias" / f"{slug}.png").exists():
+        return f"{SITE}/img/guias/{slug}.png"
+    return OG_IMAGE
+
+
 def og_tags(t):
     """Etiquetas Open Graph/Twitter para que los enlaces se vean bien al compartirlos (Facebook, WhatsApp...)."""
     title = re.search(r"<title>(.*?)</title>", t, re.S)
@@ -143,7 +151,7 @@ def og_tags(t):
         ("og:title", html.unescape(title.group(1).split(" | ")[0].strip())),
         ("og:description", html.unescape(desc.group(1)) if desc else ""),
         ("og:url", canon.group(1)),
-        ("og:image", OG_IMAGE),
+        ("og:image", og_image(canon.group(1))),
         ("og:image:width", "1200"),
         ("og:image:height", "630"),
     ]
