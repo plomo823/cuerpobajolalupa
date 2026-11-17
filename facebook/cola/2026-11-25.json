@@ -1,0 +1,20 @@
+{
+  "fecha": "2026-11-25",
+  "publicaciones": [
+    {
+      "hora": "10:00",
+      "guia": "tension-alta-sintomas.html",
+      "texto": "¿El café sube la tensión? ¿Una tensión de 150/90 es peligrosa? Respondemos a las dudas más frecuentes sobre la hipertensión, con tabla y sin alarmismos.\n\nGuía completa: https://cuerpobajolalupa.es/guias/tension-alta-sintomas.html"
+    },
+    {
+      "hora": "14:00",
+      "guia": "glucosa-ayunas-valores-normales.html",
+      "texto": "¿Tienes análisis de sangre esta semana? Te contamos cómo prepararte, qué cifra de glucosa en ayunas es normal (por debajo de 100 mg/dL) y cuándo un valor bajo también es para tenerlo en cuenta.\n\nGuía completa: https://cuerpobajolalupa.es/guias/glucosa-ayunas-valores-normales.html"
+    },
+    {
+      "hora": "20:00",
+      "guia": "presion-en-casa.html",
+      "texto": "¿Te mides la tensión en casa? La postura, el manguito o medir una sola vez pueden cambiar mucho la cifra. Cuatro pasos para que la lectura sea fiable y qué hacer si sale alta.\n\nGuía completa: https://cuerpobajolalupa.es/guias/presion-en-casa.html"
+    }
+  ]
+}

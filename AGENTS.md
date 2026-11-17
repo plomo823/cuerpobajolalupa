@@ -85,11 +85,17 @@ Lo que funciona y debes aplicar:
 
 ## Facebook: atraer visitas a la web
 
-José tiene la página de Facebook **https://www.facebook.com/cuerpobajolalupa**, creada el 17-11-2026. Su botón «Más información» lleva a la web. Tú **no publicas en Facebook** (no tienes acceso y no tocas cuentas). Tu parte es:
+José tiene la página de Facebook **https://www.facebook.com/cuerpobajolalupa**, creada el 17-11-2026. Su botón «Más información» lleva a la web. Tú no tienes acceso a Facebook: **preparas las publicaciones y una tarea en el ordenador de José las programa sola** en la página. Tu parte es:
 
 - **Que cada guía se vea bien al compartirla.** `tools/build.py` añade solo las etiquetas Open Graph (título, descripción e imagen) a todas las páginas, a partir de `<title>`, `meta description` y `canonical`. Cuida que esos tres datos sean atractivos y correctos en cada guía nueva.
 - **Cada guía nueva lleva su imagen propia (obligatorio).** Sin imagen, en Facebook nadie hace clic. Añade la guía a `PORTADAS` en `tools/portadas.py`: tema, un **titular en forma de pregunta corta** (máximo unas 40 letras, por ejemplo «¿Tu glucosa en ayunas es normal?»), una línea `sub` (solo cifras que estén en la guía) y un `dibujo` de los que ya existen (tensiómetro, corazón, análisis, arteria, gota, glucómetro, hematíe, cama, reloj con luna, huellas, magnesio…). Si ninguno encaja, crea uno nuevo con el mismo estilo plano. Ejecuta `python tools/portadas.py <archivo-sin-.html>` y después `python tools/build.py`: la imagen queda en `img/guias/` y se pone sola como `og:image`. Mírala antes del commit: el texto no puede tocar el dibujo. Si el script avisa de que no hay navegador, la guía usa la imagen genérica: dilo en el resumen para que José la genere desde su ordenador.
-- **Preparar las publicaciones para José.** En cada resumen diario, añade al final **«Para Facebook»**: un texto corto (2–4 frases, tono cercano, sin alarmismo ni promesas) con una pregunta o dato útil de la guía publicada ese día y su enlace. José lo copiará y lo publicará.
+- **Preparar cada día 3 publicaciones de Facebook (obligatorio, es parte de la rutina diaria).** Al terminar la guía del día, crea `facebook/cola/AAAA-MM-DD.json` con la fecha de **mañana** (copia el formato de los archivos que ya hay en esa carpeta): 3 publicaciones a las **10:00, 14:00 y 20:00**.
+  - 10:00: la guía que has publicado hoy (comprueba antes que ya responde en la web). Si no has publicado ninguna, otra guía antigua.
+  - 14:00 y 20:00: guías antiguas, variando temas. No repitas una guía que haya salido hace menos de 4 días (mira los archivos de `facebook/cola/` y `facebook/historial-inicial.json`).
+  - Texto: 2–4 frases, tono cercano, que empiece con una pregunta o un dato que enganche y termine con una línea en blanco y `Guía completa: <URL de la guía>`. Cambia el enfoque cada vez que repitas una guía (usa otra pregunta de su FAQ u otro apartado). Solo cifras que estén en la guía. Sin alarmismo, sin promesas, sin clickbait, sin emojis en exceso (máximo 1).
+  - Del 17-11 al 24-11-2026 ya hay publicaciones programadas a mano: no crees archivos de cola con fecha anterior al 25-11-2026.
+  - Si el archivo de mañana ya existe, no lo dupliques: solo cambia la publicación de las 10:00 por tu guía nueva.
+  - Nunca borres ni cambies archivos de días pasados. Incluye el archivo en tu commit del día. En el resumen diario indica «Facebook: 3 publicaciones preparadas para mañana».
 - No inventes testimonios, cifras de seguidores ni sorteos. No uses clickbait sanitario («lo que los médicos no quieren que sepas»).
 
 ## Lo que NUNCA haces
