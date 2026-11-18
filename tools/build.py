@@ -22,6 +22,9 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 GUIAS = ROOT / "guias"
 SITE = "https://cuerpobajolalupa.es"
 ADS_META = '<meta name="google-adsense-account" content="ca-pub-1492478614433701">'
+# Código de AdSense que pidió José el 18-11-2026. Va en el <head> de todas las páginas; no lo quites.
+ADS_SCRIPT = ('<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+              '?client=ca-pub-1492478614433701" crossorigin="anonymous"></script>')
 
 
 def esc(t):
@@ -223,6 +226,8 @@ def main():
                 t = t.replace("</head>", og + "</head>", 1)
         if ADS_META not in t:
             t = t.replace('<meta charset="utf-8">', '<meta charset="utf-8">' + ADS_META, 1)
+        if ADS_SCRIPT not in t:
+            t = t.replace(ADS_META, ADS_META + ADS_SCRIPT, 1)
         if p.parent == GUIAS and p.name in tema_de:
             tm = tema_de[p.name]
             crumbs = (f'<div class="breadcrumbs"><a href="/">Inicio</a> / <a href="/guias/">Guías</a> / '
