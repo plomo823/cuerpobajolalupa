@@ -38,6 +38,8 @@ PORTADAS = {
         sub="LDL, HDL y triglicéridos, línea por línea", dibujo=("analisis",)),
     "colesterol-ldl-alto": dict(tema="colesterol", titular="Colesterol LDL alto: ¿cuánto es demasiado?",
         sub="Normal: menos de 100 mg/dL. Mira la tabla", dibujo=("arteria",)),
+    "colesterol-hdl-bajo": dict(tema="colesterol", titular="¿Tu colesterol bueno está bajo?",
+        sub="Lo deseable: 60 mg/dL o más", dibujo=("hdl_flecha",)),
     "como-bajar-el-colesterol": dict(tema="colesterol", titular="Cómo bajar el colesterol",
         sub="Hábitos que funcionan y cuándo hace falta medicación", dibujo=("bajar",)),
     "trigliceridos-altos": dict(tema="colesterol", titular="Triglicéridos altos: ¿qué significan?",
@@ -113,6 +115,18 @@ def arteria(c):
         '<circle cx="120" cy="120" r="12" fill="#ffe680"/><circle cx="170" cy="105" r="9" fill="#ffe680"/><circle cx="95" cy="165" r="8" fill="#ffe680"/></g>'
         '<ellipse cx="235" cy="250" rx="26" ry="16" fill="#e53935"/><ellipse cx="275" cy="210" rx="22" ry="14" fill="#e53935"/>'
         f'<rect x="250" y="30" width="130" height="58" rx="29" fill="#fff"/><text x="315" y="70" font-size="32" font-weight="900" fill="{c}" text-anchor="middle">LDL</text>'
+    )
+
+
+def hdl_flecha(c):
+    return (
+        '<circle cx="200" cy="215" r="160" fill="#fbd5cf"/><circle cx="200" cy="215" r="130" fill="#f4a59a"/>'
+        '<circle cx="200" cy="215" r="105" fill="#b71c1c"/>'
+        '<ellipse cx="160" cy="250" rx="26" ry="16" fill="#e53935"/><ellipse cx="245" cy="270" rx="22" ry="14" fill="#e53935"/>'
+        '<ellipse cx="230" cy="175" rx="20" ry="13" fill="#e53935"/>'
+        '<path d="M200 300 L200 150" stroke="#fff" stroke-width="26" stroke-linecap="round"/>'
+        '<path d="M150 185 L200 125 L250 185" fill="none" stroke="#fff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>'
+        f'<rect x="250" y="20" width="130" height="58" rx="29" fill="#fff"/><text x="315" y="60" font-size="32" font-weight="900" fill="{c}" text-anchor="middle">HDL</text>'
     )
 
 

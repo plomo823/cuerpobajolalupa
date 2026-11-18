@@ -38,6 +38,10 @@
           "corto": "Colesterol LDL alto"
         },
         {
+          "archivo": "colesterol-hdl-bajo.html",
+          "corto": "Colesterol HDL bajo"
+        },
+        {
           "archivo": "como-bajar-el-colesterol.html",
           "corto": "Cómo bajar el colesterol"
         },
