@@ -63,6 +63,10 @@
         {
           "archivo": "hemoglobina-glicosilada-hba1c.html",
           "corto": "Hemoglobina glicosilada (HbA1c)"
+        },
+        {
+          "archivo": "prediabetes.html",
+          "corto": "Prediabetes"
         }
       ]
     },

@@ -48,6 +48,8 @@ PORTADAS = {
         sub="Normal, prediabetes o diabetes: la tabla", dibujo=("glucometro", "100")),
     "hemoglobina-glicosilada-hba1c": dict(tema="diabetes", titular="Hemoglobina glicosilada: ¿qué dice tu cifra?",
         sub="5,7 %, 6,5 %… la tabla explicada", dibujo=("hematie",)),
+    "prediabetes": dict(tema="diabetes", titular="¿Tienes prediabetes sin saberlo?",
+        sub="Glucosa en ayunas de 100 a 125 mg/dL", dibujo=("glucometro", "110")),
     "apnea-del-sueno": dict(tema="sueno", titular="¿Roncas? Podría ser apnea del sueño",
         sub="Síntomas, diagnóstico y tratamiento", dibujo=("cama",)),
     "dormir-corazon": dict(tema="sueno", titular="¿Cuántas horas debes dormir?",
