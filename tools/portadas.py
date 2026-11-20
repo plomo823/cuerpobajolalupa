@@ -30,6 +30,8 @@ PORTADAS = {
         sub="Tabla con los valores de referencia y cuándo es alta", dibujo=("tensiometro", "130", "85")),
     "tension-alta-sintomas": dict(tema="corazon", titular="Tensión alta: ¿da síntomas?",
         sub="Síntomas, causas y qué hacer", dibujo=("tensiometro", "150", "90")),
+    "tension-baja": dict(tema="corazon", titular="¿Tu tensión está baja?",
+        sub="Por debajo de 90/60: síntomas y qué hacer", dibujo=("tensiometro", "88", "58")),
     "presion-en-casa": dict(tema="corazon", titular="¿Te mides bien la tensión en casa?",
         sub="4 pasos y los errores más frecuentes", dibujo=("tensiometro_ok",)),
     "sintomas-infarto": dict(tema="corazon", titular="Señales de un posible infarto",

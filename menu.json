@@ -15,6 +15,10 @@
           "corto": "Tensión alta: síntomas"
         },
         {
+          "archivo": "tension-baja.html",
+          "corto": "Tensión baja (hipotensión)"
+        },
+        {
           "archivo": "presion-en-casa.html",
           "corto": "Medir la tensión en casa"
         },
