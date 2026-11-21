@@ -52,6 +52,8 @@ PORTADAS = {
         sub="5,7 %, 6,5 %… la tabla explicada", dibujo=("hematie",)),
     "prediabetes": dict(tema="diabetes", titular="¿Tienes prediabetes sin saberlo?",
         sub="Glucosa en ayunas de 100 a 125 mg/dL", dibujo=("glucometro", "110")),
+    "resistencia-a-la-insulina": dict(tema="diabetes", titular="¿Tu insulina funciona bien?",
+        sub="Señales, análisis y qué hacer", dibujo=("llave_celula",)),
     "apnea-del-sueno": dict(tema="sueno", titular="¿Roncas? Podría ser apnea del sueño",
         sub="Síntomas, diagnóstico y tratamiento", dibujo=("cama",)),
     "dormir-corazon": dict(tema="sueno", titular="¿Cuántas horas debes dormir?",
@@ -234,6 +236,19 @@ def magnesio(c):
         '<path d="M240 380 C 230 320 280 290 360 300 C 350 350 300 385 240 380 Z" fill="#2e9e6a"/>'
         '<path d="M245 375 C 280 345 315 325 352 305" fill="none" stroke="#1d7a4e" stroke-width="5"/>'
         '<path d="M330 70 l18 -40 l18 40 Z" fill="#ffd23f" transform="rotate(20 348 50)"/>'
+    )
+
+
+def llave_celula(c):
+    """Célula con cerradura y una llave (insulina) que no entra bien."""
+    return (
+        '<circle cx="210" cy="215" r="150" fill="#fff"/>'
+        '<circle cx="210" cy="215" r="150" fill="none" stroke="#dcebfb" stroke-width="18"/>'
+        '<circle cx="250" cy="170" r="16" fill="#ffd23f"/><circle cx="160" cy="290" r="12" fill="#ffd23f"/><circle cx="280" cy="290" r="10" fill="#ffd23f"/>'
+        '<circle cx="210" cy="205" r="34" fill="#27313d"/><path d="M196 225 L224 225 L234 285 L186 285 Z" fill="#27313d"/>'
+        f'<g transform="rotate(-28 95 330)"><circle cx="60" cy="330" r="38" fill="{c}"/><circle cx="60" cy="330" r="14" fill="#fff"/>'
+        f'<rect x="92" y="320" width="120" height="20" rx="6" fill="{c}"/><rect x="170" y="340" width="14" height="24" fill="{c}"/><rect x="194" y="340" width="14" height="32" fill="{c}"/></g>'
+        '<path d="M300 70 l26 26 M326 70 l-26 26" stroke="#d32f2f" stroke-width="12" stroke-linecap="round"/>'
     )
 
 

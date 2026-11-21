@@ -58,7 +58,7 @@
     {
       "id": "diabetes",
       "nombre": "Diabetes y azúcar",
-      "descripcion": "Glucosa, hemoglobina glicosilada y prediabetes",
+      "descripcion": "Glucosa, HbA1c, prediabetes y resistencia a la insulina",
       "guias": [
         {
           "archivo": "glucosa-ayunas-valores-normales.html",
@@ -71,6 +71,10 @@
         {
           "archivo": "prediabetes.html",
           "corto": "Prediabetes"
+        },
+        {
+          "archivo": "resistencia-a-la-insulina.html",
+          "corto": "Resistencia a la insulina"
         }
       ]
     },
