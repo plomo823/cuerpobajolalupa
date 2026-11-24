@@ -26,6 +26,8 @@ TEMAS = {
 }
 
 PORTADAS = {
+    'palpitaciones-cardiacas': dict(tema="corazon", titular="¿Notas latidos extraños?", sub="Qué observar y cuándo llamar al 112", dibujo=("corazon_ecg",)),
+    'insomnio': dict(tema="sueno", titular="¿Por qué no consigues dormir?", sub="Diario de sueño y cuándo pedir ayuda", dibujo=("cama",)),
     "tension-arterial-valores-normales": dict(tema="corazon", titular="¿130/85 es tensión normal?",
         sub="Tabla con los valores de referencia y cuándo es alta", dibujo=("tensiometro", "130", "85")),
     "tension-alta-sintomas": dict(tema="corazon", titular="Tensión alta: ¿da síntomas?",

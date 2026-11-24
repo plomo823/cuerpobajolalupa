@@ -25,6 +25,10 @@
         {
           "archivo": "sintomas-infarto.html",
           "corto": "Síntomas de infarto"
+        },
+        {
+          "archivo": "palpitaciones-cardiacas.html",
+          "corto": "Palpitaciones cardíacas"
         }
       ]
     },
@@ -90,6 +94,10 @@
         {
           "archivo": "dormir-corazon.html",
           "corto": "Cuántas horas dormir"
+        },
+        {
+          "archivo": "insomnio.html",
+          "corto": "Insomnio"
         }
       ]
     },

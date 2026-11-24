@@ -135,3 +135,7 @@
 - Nuevas páginas: herramientas de salud (IMC, gasto energético en reposo, registro de tensión con CSV y guía imprimible) y contacto editorial. Herramientas sin script publicitario ni almacenamiento de datos.
 - Se corrigieron política editorial, privacidad y cookies para reflejar la aprobación pendiente; autoría editorial visible, enlaces y sitemap.
 - Verificación pendiente: CMP de Google en navegador real y revisión médica externa. Ampliar guías con fuentes comprobadas; objetivo editorial de 25 guías, no requisito oficial.
+
+## 2026-11-24 - Ampliación editorial
+- Dos guías originales: insomnio y palpitaciones, con registros prácticos, referencias NIH y AHA, enlaces internos y avisos de seguridad. Total 20 guías.
+- Sin revisión clínica externa. Mantener pendiente nueva revisión AdSense.
