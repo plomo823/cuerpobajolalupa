@@ -183,3 +183,6 @@ h1,h2,h3,h4{color:var(--ink);line-height:1.25;margin:0 0 .5em}
 
 .footer-about .social{display:flex;gap:16px;margin-top:14px}
 .footer-about .social a{font-weight:600}
+
+/* Herramientas educativas */
+.health-form{display:grid;gap:12px;max-width:640px;margin:18px 0}.health-form label{display:grid;gap:5px;font-weight:600}.health-form input,.health-form select{padding:10px;border:1px solid #9aabb8;border-radius:6px;width:100%;max-width:100%;font:inherit}.health-form output{display:block;font-weight:600;min-height:1.5em}.health-table{overflow-x:auto}.health-form .button{justify-self:start}.health-table button{padding:6px}.health-table table{min-width:500px}#imc,#energia,#presion,#guia{scroll-margin-top:100px;margin:35px 0}@media print{body:has(#guia) .site-header,body:has(#guia) .site-footer,body:has(#guia) .pagehead,body:has(#guia) #imc,body:has(#guia) #energia,body:has(#guia) #presion,body:has(#guia) #print-guide{display:none!important}}

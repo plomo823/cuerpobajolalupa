@@ -128,3 +128,10 @@
 - **Facebook**: no se crea archivo de cola: mañana es 22-11 y hasta el 24-11 está programado a mano (el de 25-11 ya existe). El 24-11 tocará revisar/crear el de 25-11 (solo cambiar la de las 10:00 si ya existe).
 - **Para José**: solicitar la indexación de la guía de resistencia a la insulina en Search Console y, si hay vídeo sobre glucosa, diabetes o insulina, añadir el enlace en su descripción. Vídeo recomendado: «Resistencia a la insulina: señales y qué hacer».
 - **Plan para mañana**: nueva guía de alto RPM (p. ej. «Síndrome metabólico» o «Colesterol alto en el embarazo/jóvenes»); mejorar «Síntomas de infarto» con respuesta rápida, índice, FAQ y «Más sobre este tema».
+
+## 2026-11-24 - Correcciones tras rechazo AdSense
+- Motivo comunicado por el titular: contenido de poco valor. No solicitar revisión todavía.
+- Dominio comprobado desde PC1: HTTPS 200. 18 guías existentes conservadas.
+- Nuevas páginas: herramientas de salud (IMC, gasto energético en reposo, registro de tensión con CSV y guía imprimible) y contacto editorial. Herramientas sin script publicitario ni almacenamiento de datos.
+- Se corrigieron política editorial, privacidad y cookies para reflejar la aprobación pendiente; autoría editorial visible, enlaces y sitemap.
+- Verificación pendiente: CMP de Google en navegador real y revisión médica externa. Ampliar guías con fuentes comprobadas; objetivo editorial de 25 guías, no requisito oficial.

@@ -101,7 +101,7 @@ def header_html(temas):
         '<nav class="navlinks" id="main-menu" aria-label="Navegación principal">'
         + "".join(drops)
         + '<a class="nav-plain" href="/guias/">Todas las guías</a>'
-        '<a class="nav-plain" href="/sobre.html">El proyecto</a>'
+        '<a class="nav-plain" href="/herramientas.html">Herramientas</a><a class="nav-plain" href="/sobre.html">El proyecto</a>'
         f'<a class="nav-search" href="/guias/#buscar" aria-label="Buscar en la web">{SEARCH_ICON}<span>Buscar</span></a>'
         "</nav></div></header>"
     )
@@ -118,7 +118,7 @@ def footer_html(temas):
         '<p class="social"><a href="https://www.facebook.com/cuerpobajolalupa" target="_blank" rel="noopener noreferrer">Facebook</a>'
         '<a href="https://www.youtube.com/channel/UCkz1cHuhbO_5uhVJpBQgLeg" target="_blank" rel="noopener noreferrer">YouTube</a></p></div>'
         f'<div class="footer-col"><h4>Temas</h4>{tema_links}<a href="/guias/">Todas las guías</a></div>'
-        '<div class="footer-col"><h4>Proyecto</h4><a href="/sobre.html">El proyecto</a><a href="/metodo.html">Método editorial</a></div>'
+        '<div class="footer-col"><h4>Proyecto</h4><a href="/sobre.html">El proyecto</a><a href="/metodo.html">Método editorial</a><a href="/contacto.html">Contacto</a><a href="/herramientas.html">Herramientas</a></div>'
         '<div class="footer-col footer-links"><h4>Legal</h4><a href="/privacidad.html">Privacidad</a>'
         '<a href="/cookies.html">Cookies</a><a href="/aviso-legal.html">Aviso legal</a></div>'
         "</div>"
@@ -226,7 +226,9 @@ def main():
                 t = t.replace("</head>", og + "</head>", 1)
         if ADS_META not in t:
             t = t.replace('<meta charset="utf-8">', '<meta charset="utf-8">' + ADS_META, 1)
-        if ADS_SCRIPT not in t:
+        if p.name == "herramientas.html":
+            t = t.replace(ADS_SCRIPT, "")
+        elif ADS_SCRIPT not in t:
             t = t.replace(ADS_META, ADS_META + ADS_SCRIPT, 1)
         if p.parent == GUIAS and p.name in tema_de:
             tm = tema_de[p.name]
