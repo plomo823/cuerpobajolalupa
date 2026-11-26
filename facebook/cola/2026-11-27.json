@@ -1,0 +1,20 @@
+{
+  "fecha": "2026-11-27",
+  "publicaciones": [
+    {
+      "hora": "10:00",
+      "guia": "sindrome-metabolico.html",
+      "texto": "¿Cintura, tensión, glucosa, triglicéridos y colesterol HDL? Si cumples 3 de estos 5 criterios, se habla de síndrome metabólico. Te contamos con una tabla cómo comprobarlo con tu último análisis y una cinta métrica, y qué hábitos ayudan.\n\nGuía completa: https://cuerpobajolalupa.es/guias/sindrome-metabolico.html"
+    },
+    {
+      "hora": "14:00",
+      "guia": "colesterol-hdl-bajo.html",
+      "texto": "¿Sabes cuánto debería ser tu colesterol «bueno»? Lo deseable es un HDL de 60 mg/dL o más; por debajo de 40 en hombres y de 50 en mujeres se considera bajo. Te explicamos sus causas y qué hábitos ayudan a subirlo.\n\nGuía completa: https://cuerpobajolalupa.es/guias/colesterol-hdl-bajo.html"
+    },
+    {
+      "hora": "20:00",
+      "guia": "prediabetes.html",
+      "texto": "¿Tu glucosa en ayunas está entre 100 y 125 mg/dL? Eso es prediabetes, y casi nunca da síntomas. La buena noticia: con actividad física y perder algo de peso, si sobra, muchas veces se puede revertir.\n\nGuía completa: https://cuerpobajolalupa.es/guias/prediabetes.html"
+    }
+  ]
+}

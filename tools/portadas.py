@@ -56,6 +56,8 @@ PORTADAS = {
         sub="Glucosa en ayunas de 100 a 125 mg/dL", dibujo=("glucometro", "110")),
     "resistencia-a-la-insulina": dict(tema="diabetes", titular="¿Tu insulina funciona bien?",
         sub="Señales, análisis y qué hacer", dibujo=("llave_celula",)),
+    "sindrome-metabolico": dict(tema="diabetes", titular="¿Cumples 3 de estos 5 criterios?",
+        sub="Síndrome metabólico: la tabla y qué hacer", dibujo=("lista_criterios",)),
     "apnea-del-sueno": dict(tema="sueno", titular="¿Roncas? Podría ser apnea del sueño",
         sub="Síntomas, diagnóstico y tratamiento", dibujo=("cama",)),
     "dormir-corazon": dict(tema="sueno", titular="¿Cuántas horas debes dormir?",
@@ -252,6 +254,23 @@ def llave_celula(c):
         f'<rect x="92" y="320" width="120" height="20" rx="6" fill="{c}"/><rect x="170" y="340" width="14" height="24" fill="{c}"/><rect x="194" y="340" width="14" height="32" fill="{c}"/></g>'
         '<path d="M300 70 l26 26 M326 70 l-26 26" stroke="#d32f2f" stroke-width="12" stroke-linecap="round"/>'
     )
+
+
+def lista_criterios(c):
+    """Ficha con 5 criterios, 3 marcados, y una cinta métrica."""
+    s = '<rect x="70" y="40" width="260" height="320" rx="22" fill="#fff"/>'
+    for i in range(5):
+        y = 82 + i * 58
+        if i < 3:
+            s += f'<circle cx="112" cy="{y}" r="20" fill="{c}"/><path d="M102 {y} l7 8 l14 -16" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'
+        else:
+            s += f'<circle cx="112" cy="{y}" r="18" fill="none" stroke="#c5ced8" stroke-width="5"/>'
+        s += f'<rect x="146" y="{y - 9}" width="{150 - (i % 2) * 40}" height="18" rx="9" fill="#dfe6ee"/>'
+    s += '<g transform="rotate(-18 300 330)"><rect x="200" y="305" width="190" height="46" rx="8" fill="#ffd23f"/>'
+    for k in range(9):
+        x = 214 + k * 20
+        s += f'<line x1="{x}" y1="305" x2="{x}" y2="{325 if k % 2 else 333}" stroke="#27313d" stroke-width="4"/>'
+    return s + '</g>'
 
 
 def dibujo_svg(spec, c, fondo):

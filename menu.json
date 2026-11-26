@@ -62,7 +62,7 @@
     {
       "id": "diabetes",
       "nombre": "Diabetes y azúcar",
-      "descripcion": "Glucosa, HbA1c, prediabetes y resistencia a la insulina",
+      "descripcion": "Glucosa, HbA1c, prediabetes, resistencia a la insulina y síndrome metabólico",
       "guias": [
         {
           "archivo": "glucosa-ayunas-valores-normales.html",
@@ -79,6 +79,10 @@
         {
           "archivo": "resistencia-a-la-insulina.html",
           "corto": "Resistencia a la insulina"
+        },
+        {
+          "archivo": "sindrome-metabolico.html",
+          "corto": "Síndrome metabólico"
         }
       ]
     },
