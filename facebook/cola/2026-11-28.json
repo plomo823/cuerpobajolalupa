@@ -1,0 +1,20 @@
+{
+  "fecha": "2026-11-28",
+  "publicaciones": [
+    {
+      "hora": "10:00",
+      "guia": "higado-graso.html",
+      "texto": "¿Sabías que el hígado graso casi nunca da síntomas? Lo normal es descubrirlo por casualidad en un análisis o una ecografía. La buena noticia: según el NIDDK, perder al menos un 3-5 % del peso puede reducir la grasa del hígado. Te explicamos qué pruebas se usan, cuándo es grave y qué hacer.\n\nGuía completa: https://cuerpobajolalupa.es/guias/higado-graso.html"
+    },
+    {
+      "hora": "14:00",
+      "guia": "dormir-corazon.html",
+      "texto": "¿Cuántas horas debería dormir un adolescente? Entre 8 y 10, según la Asociación Americana del Corazón; un adulto, de 7 a 9. En nuestra guía tienes la tabla por edades y los hábitos que ayudan a dormir mejor.\n\nGuía completa: https://cuerpobajolalupa.es/guias/dormir-corazon.html"
+    },
+    {
+      "hora": "20:00",
+      "guia": "colesterol-ldl-alto.html",
+      "texto": "¿Tu LDL está en 160? A partir de esa cifra se considera alto, y entre 130 y 159 mg/dL, límite alto. Te explicamos con una tabla qué significa cada valor, de qué depende tu meta y qué hábitos ayudan a bajarlo.\n\nGuía completa: https://cuerpobajolalupa.es/guias/colesterol-ldl-alto.html"
+    }
+  ]
+}

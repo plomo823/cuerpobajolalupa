@@ -58,6 +58,8 @@ PORTADAS = {
         sub="Señales, análisis y qué hacer", dibujo=("llave_celula",)),
     "sindrome-metabolico": dict(tema="diabetes", titular="¿Cumples 3 de estos 5 criterios?",
         sub="Síndrome metabólico: la tabla y qué hacer", dibujo=("lista_criterios",)),
+    "higado-graso": dict(tema="diabetes", titular="¿Tienes grasa en el hígado?",
+        sub="Suele no dar síntomas. Perder un 3-5 % del peso ayuda", dibujo=("higado",)),
     "apnea-del-sueno": dict(tema="sueno", titular="¿Roncas? Podría ser apnea del sueño",
         sub="Síntomas, diagnóstico y tratamiento", dibujo=("cama",)),
     "dormir-corazon": dict(tema="sueno", titular="¿Cuántas horas debes dormir?",
@@ -253,6 +255,18 @@ def llave_celula(c):
         f'<g transform="rotate(-28 95 330)"><circle cx="60" cy="330" r="38" fill="{c}"/><circle cx="60" cy="330" r="14" fill="#fff"/>'
         f'<rect x="92" y="320" width="120" height="20" rx="6" fill="{c}"/><rect x="170" y="340" width="14" height="24" fill="{c}"/><rect x="194" y="340" width="14" height="32" fill="{c}"/></g>'
         '<path d="M300 70 l26 26 M326 70 l-26 26" stroke="#d32f2f" stroke-width="12" stroke-linecap="round"/>'
+    )
+
+
+def higado(c):
+    """Hígado en plano con gotas de grasa y una lupa."""
+    return (
+        '<path d="M40 190 C 40 120 120 90 210 95 C 300 100 360 110 370 150 C 378 185 330 215 280 250 C 230 290 170 330 120 320 C 70 310 40 260 40 190 Z" fill="#b5523b"/>'
+        '<path d="M70 175 C 90 140 140 125 190 125" fill="none" stroke="#d27a62" stroke-width="12" stroke-linecap="round"/>'
+        '<path d="M250 110 C 245 160 235 200 215 240" fill="none" stroke="#8f3d2b" stroke-width="6" stroke-linecap="round"/>'
+        '<circle cx="120" cy="230" r="26" fill="#ffd23f"/><circle cx="185" cy="270" r="18" fill="#ffd23f"/>'
+        '<circle cx="300" cy="165" r="20" fill="#ffd23f"/><circle cx="165" cy="190" r="13" fill="#ffd23f"/><circle cx="112" cy="222" r="8" fill="#fff3b0"/>'
+        + lupa(300, 300, 52)
     )
 
 
