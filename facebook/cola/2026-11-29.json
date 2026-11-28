@@ -1,0 +1,20 @@
+{
+  "fecha": "2026-11-29",
+  "publicaciones": [
+    {
+      "hora": "10:00",
+      "guia": "acido-urico-alto.html",
+      "texto": "¿Te ha salido el ácido úrico alto en el análisis? Según MedlinePlus, lo normal es entre 3,0 y 7,1 mg/dL en mujeres y entre 4,0 y 8,6 en hombres, y tenerlo alto no siempre significa una enfermedad. Te explicamos qué lo sube, cuándo se relaciona con la gota y qué hábitos ayudan.\n\nGuía completa: https://cuerpobajolalupa.es/guias/acido-urico-alto.html"
+    },
+    {
+      "hora": "14:00",
+      "guia": "caminar-corazon.html",
+      "texto": "¿Caminas a ritmo moderado o solo paseas? Haz la prueba del habla: si respiras más rápido pero todavía puedes conversar con facilidad, es actividad moderada. La recomendación general es sumar al menos 150 minutos a la semana, por ejemplo 30 minutos cinco días.\n\nGuía completa: https://cuerpobajolalupa.es/guias/caminar-corazon.html"
+    },
+    {
+      "hora": "20:00",
+      "guia": "tension-baja.html",
+      "texto": "¿Te mareas al levantarte de la cama o del sofá? Puede tratarse de una bajada de tensión al ponerte de pie. Se habla de tensión baja por debajo de 90/60 mmHg, aunque en muchas personas es normal y no da síntomas. Te contamos qué hacer en el día a día y cuándo consultar.\n\nGuía completa: https://cuerpobajolalupa.es/guias/tension-baja.html"
+    }
+  ]
+}

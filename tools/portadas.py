@@ -23,9 +23,12 @@ TEMAS = {
     "diabetes": ("Diabetes y azúcar", "#1c64c4", "#3b82e0"),
     "sueno": ("Sueño", "#3f3596", "#5a4fbf"),
     "habitos": ("Hábitos y nutrición", "#0d7a64", "#1d9a80"),
+    "metabolismo": ("Metabolismo", "#8a4b0f", "#b06a24"),
 }
 
 PORTADAS = {
+    "acido-urico-alto": dict(tema="metabolismo", titular="¿Tienes el ácido úrico alto?",
+        sub="Valores normales, causas y relación con la gota", dibujo=("tubo_cristales",)),
     'palpitaciones-cardiacas': dict(tema="corazon", titular="¿Notas latidos extraños?", sub="Qué observar y cuándo llamar al 112", dibujo=("corazon_ecg",)),
     'insomnio': dict(tema="sueno", titular="¿Por qué no consigues dormir?", sub="Diario de sueño y cuándo pedir ayuda", dibujo=("cama",)),
     "tension-arterial-valores-normales": dict(tema="corazon", titular="¿130/85 es tensión normal?",
@@ -285,6 +288,18 @@ def lista_criterios(c):
         x = 214 + k * 20
         s += f'<line x1="{x}" y1="305" x2="{x}" y2="{325 if k % 2 else 333}" stroke="#27313d" stroke-width="4"/>'
     return s + '</g>'
+
+
+def tubo_cristales(c):
+    """Tubo de análisis con cristales de ácido úrico (agujas) y lupa."""
+    s = '<rect x="120" y="30" width="110" height="40" rx="10" fill="#27313d"/>'
+    s += '<path d="M130 70 L220 70 L220 300 A45 45 0 0 1 130 300 Z" fill="#fff"/>'
+    s += '<path d="M130 160 L220 160 L220 300 A45 45 0 0 1 130 300 Z" fill="#d32f2f"/>'
+    s += '<text x="175" y="125" font-size="26" font-weight="800" fill="#27313d" text-anchor="middle">U</text>'
+    agujas = [(235, 120, 275, 100), (240, 150, 300, 140), (235, 175, 285, 190), (260, 115, 290, 85)]
+    for x1, y1, x2, y2 in agujas:
+        s += f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#fff3b0" stroke-width="9" stroke-linecap="round"/>'
+    return s + lupa(268, 140, 58)
 
 
 def dibujo_svg(spec, c, fondo):

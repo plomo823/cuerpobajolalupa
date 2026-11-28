@@ -62,7 +62,7 @@
     {
       "id": "diabetes",
       "nombre": "Diabetes y azúcar",
-      "descripcion": "Glucosa, HbA1c, prediabetes, resistencia a la insulina, síndrome metabólico e hígado graso",
+      "descripcion": "Glucosa, HbA1c, prediabetes, resistencia a la insulina, síndrome metabólico, hígado graso y ácido úrico",
       "guias": [
         {
           "archivo": "glucosa-ayunas-valores-normales.html",
@@ -87,6 +87,10 @@
         {
           "archivo": "higado-graso.html",
           "corto": "Hígado graso"
+        },
+        {
+          "archivo": "acido-urico-alto.html",
+          "corto": "Ácido úrico alto"
         }
       ]
     },

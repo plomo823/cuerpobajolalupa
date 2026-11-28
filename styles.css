@@ -34,15 +34,15 @@ h1,h2,h3,h4{color:var(--ink);line-height:1.25;margin:0 0 .5em}
 .drop-menu a{display:block;padding:9px 12px;border-radius:8px;color:var(--text);font-size:15px}
 .drop-menu a:hover{background:var(--brand-soft);color:var(--brand-dark);text-decoration:none}
 .drop-menu .drop-all{margin-top:4px;border-top:1px solid var(--line);border-radius:0 0 8px 8px;color:var(--brand);font-weight:600}
-@media (hover:hover) and (min-width:1181px){.dropdown:hover .drop-menu,.dropdown:focus-within .drop-menu{display:block}}
+@media (hover:hover) and (min-width:1241px){.dropdown:hover .drop-menu,.dropdown:focus-within .drop-menu{display:block}}
 .dropdown.open .drop-menu{display:block}
 .nav-search{display:inline-flex!important;align-items:center;gap:6px;border:1px solid var(--line)!important;margin-left:8px}
 .menu-button{display:none;margin-left:auto;align-items:center;gap:8px;font:inherit;font-weight:600;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 12px;cursor:pointer}
 .burger,.burger::before,.burger::after{display:block;width:16px;height:2px;background:currentColor;border-radius:2px;position:relative}
 .burger::before,.burger::after{content:"";position:absolute;left:0}
 .burger::before{top:-5px}.burger::after{top:5px}
-@media (min-width:1181px) and (max-width:1499px){.navlinks>a,.drop-toggle{padding:10px 8px}.drop-toggle::after{margin-left:6px}.nav-search span{display:none}.nav-plain[href="/sobre.html"]{display:none}}
-@media (max-width:1180px){
+@media (min-width:1241px) and (max-width:1799px){.navlinks>a,.drop-toggle{padding:10px 8px}.drop-toggle::after{margin-left:6px}.nav-search span{display:none}.nav-plain[href="/sobre.html"]{display:none}}
+@media (max-width:1240px){
   .menu-button{display:inline-flex}
   .navlinks{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:8px 12px 16px;max-height:calc(100vh - 64px);overflow:auto}
   .navlinks.open{display:flex}
